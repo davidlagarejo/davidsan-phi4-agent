@@ -1,7 +1,7 @@
 [project]
 name = "davidsan"
 version = "0.1.0"
-description = "DavidSan — agente basado en Phi-4 para comunicar valor personal sin exponer datos privados"
+description = "DavidSan — privacy-first AI agent for professional positioning and high-priority execution"
 requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.0",

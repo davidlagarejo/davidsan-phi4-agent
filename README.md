@@ -1,8 +1,10 @@
 # DavidSan
 
-`DavidSan` is a `Phi-4`-based personal narrative agent designed to turn scattered professional context into clearer, stronger, and more presentable positioning without exposing private data.
+Your privacy-first AI agent for professional positioning and high-priority execution.
 
-This repository is the public-facing version of the project: a clean technical foundation, early package structure, tests, documentation, and contribution scaffolding for building in the open.
+`DavidSan` is a larger personal AI project built around a fine-tuned `Phi-4` model, privacy-aware context handling, and execution workflows that help turn scattered information into clear positioning and concrete next actions.
+
+This repository is the public-facing version of that system: a clean technical foundation, early package structure, tests, documentation, and contribution scaffolding for building in the open.
 
 ## Why This Project Exists
 
@@ -10,7 +12,7 @@ Most AI writing tools help people write faster.
 
 Far fewer help people represent themselves better.
 
-`DavidSan` explores a different direction: an assistant that helps a person articulate what they do, how they think, and why they create value, while staying privacy-aware by design.
+`DavidSan` explores a different direction: an assistant that helps a person articulate what they do, how they think, why they create value, and what they should do next, while staying privacy-aware by design.
 
 ## What Problem It Tries To Solve
 
@@ -23,6 +25,20 @@ This project is built around a practical gap:
 
 `DavidSan` is meant to help transform context into usable professional narrative with more clarity and less overexposure.
 
+## What Makes This System Different
+
+`DavidSan` is not just a prompt wrapper.
+
+The larger project combines:
+
+- a fine-tuned `Phi-4` model
+- direct-questioning behavior to proactively understand the user
+- contextual file reading to build better working knowledge
+- `n8n` workflows for execution-oriented tasks
+- a dashboard designed around priorities, rationale, and follow-through
+
+This makes the system closer to a personal operating layer than a generic assistant.
+
 ## Recruiter-Oriented Framing
 
 For recruiters, hiring managers, and technical reviewers, this repository shows more than a prototype idea.
@@ -31,7 +47,7 @@ It demonstrates:
 
 - product thinking around a concrete user problem
 - practical interest in privacy-aware AI workflows
-- early system design around an LLM-based assistant
+- early system design around a fine-tuned LLM-based assistant
 - willingness to publish work-in-progress transparently
 - the ability to structure a project so it can grow into a usable product
 
@@ -54,10 +70,33 @@ This is not the full agent yet. It is the public, reviewable foundation of the p
 `DavidSan` is being shaped as an assistant that:
 
 - helps express a person's value more clearly
-- uses `Phi-4` as its initial generation and reformulation engine
+- uses a fine-tuned `Phi-4` model for generation and reformulation
 - relies on intentionally selected context instead of indiscriminate data ingestion
+- asks direct questions to understand missing context proactively
+- reads relevant user files to ground its reasoning
+- supports execution through workflow orchestration
 - treats privacy as a design constraint, not an afterthought
 - can evolve into a transparent, auditable personal AI workflow
+
+## Fine-Tuned Phi-4 And Execution Layer
+
+At the core of the larger project is a fine-tuned `Phi-4` model shaped to prioritize proactive understanding of the user.
+
+That means the agent is designed to:
+
+- ask direct questions when context is missing
+- learn from relevant user files instead of relying only on one-shot prompting
+- reason about priorities rather than simply answer requests
+- move from conversation into execution-oriented assistance
+
+Alongside the model, `n8n` is used as an orchestration layer for targeted workflows such as:
+
+- continuous research and monitoring
+- task prioritization
+- argumentation and reasoning support
+- email drafting
+- personal CRM follow-up
+- dashboard updates and operational flows
 
 ## What Is Public And What Is Not
 
@@ -92,6 +131,24 @@ Not public:
 | `configs/` | Safe public configuration |
 | `examples/` | Future anonymized demos |
 
+## Dashboard And Timeline
+
+An important part of the larger `DavidSan` system is the dashboard layer.
+
+The dashboard is designed to keep work grounded in priority, context, and action rather than treating everything as a flat chat history or generic task list.
+
+It is meant to surface:
+
+- what should be done first
+- why it matters
+- how well a task fits the current goals
+- what evidence or references support the recommendation
+- what the next action should be
+
+The timeline is especially important.
+
+It helps maintain focus on the highest-priority work, makes sequencing and deadlines visible, reduces drift, and prevents strategically important tasks from being buried under reactive noise.
+
 ## Run Locally
 
 ```bash
@@ -109,6 +166,7 @@ It is meant to show:
 
 - a real project with a specific use case
 - a privacy-aware AI product direction
+- fine-tuning and orchestration thinking, not just prompt experimentation
 - a technical foundation that can be inspected and extended
 - an honest early-stage build rather than a polished but shallow demo
 
@@ -129,7 +187,8 @@ Next logical steps:
 - add real assistant modules
 - define input and output contracts
 - include safe prompt examples
-- expand the `Phi-4` integration path
+- document more of the fine-tuned `Phi-4` interaction model
+- expose more of the execution workflow design
 - add a lightweight privacy and review layer
 
 ## Open Roadmap
