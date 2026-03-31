@@ -1,8 +1,10 @@
-# DavidSan
+# Personal Operating Agent
 
 Your privacy-first AI agent for professional positioning and high-priority execution.
 
-`DavidSan` is a larger personal AI project built around a fine-tuned `Phi-4` model, privacy-aware context handling, and execution workflows that help turn scattered information into clear positioning and concrete next actions.
+Short name: `DavidSan`
+
+`Personal Operating Agent`, internally referred to as `DavidSan`, is a larger personal AI project built around a fine-tuned `Phi-4` model, privacy-aware context handling, and execution workflows that help turn scattered information into clear positioning and concrete next actions.
 
 This repository is the public-facing version of that system: a clean technical foundation, early package structure, tests, documentation, and contribution scaffolding for building in the open.
 
